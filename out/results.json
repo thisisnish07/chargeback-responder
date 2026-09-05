@@ -1,0 +1,189 @@
+{
+  "metrics": {
+    "in_dist": {
+      "n": 2000,
+      "base_rate": 0.4095,
+      "pr_auc": 0.6564856069649081,
+      "roc_auc": 0.7873529706721919,
+      "brier": 0.1834003544995093,
+      "precision": 0.6454352441613588,
+      "recall": 0.7423687423687424,
+      "f1": 0.6905167518455423,
+      "threshold": 0.5
+    },
+    "shifted": {
+      "n": 900,
+      "base_rate": 0.33555555555555555,
+      "pr_auc": 0.49666308792256153,
+      "roc_auc": 0.713877937495847,
+      "brier": 0.21217725183508598,
+      "precision": 0.4787234042553192,
+      "recall": 0.7450331125827815,
+      "f1": 0.582901554404145,
+      "threshold": 0.5
+    }
+  },
+  "best_threshold": {
+    "n": 2000,
+    "n_fight": 860,
+    "n_concede": 1140,
+    "n_escalate": 0,
+    "amount_at_risk": 3609733.6999999997,
+    "gross_recovered": 1201628.8800000001,
+    "net_pnl": 384628.88,
+    "recovery_rate": 0.3328857416822743,
+    "fight_win_rate": 0.6616279069767442,
+    "ops_cost": 817000.0,
+    "threshold": 0.51
+  },
+  "policies": {
+    "in-dist": {
+      "concede everything": {
+        "n": 2000,
+        "n_fight": 0,
+        "n_concede": 2000,
+        "n_escalate": 0,
+        "amount_at_risk": 3609733.6999999997,
+        "gross_recovered": 0.0,
+        "net_pnl": 0.0,
+        "recovery_rate": 0.0,
+        "fight_win_rate": 0.0,
+        "ops_cost": 0.0
+      },
+      "fight everything": {
+        "n": 2000,
+        "n_fight": 2000,
+        "n_concede": 0,
+        "n_escalate": 0,
+        "amount_at_risk": 3609733.6999999997,
+        "gross_recovered": 1551902.4700000002,
+        "net_pnl": -348097.53,
+        "recovery_rate": 0.4299215950473023,
+        "fight_win_rate": 0.4095,
+        "ops_cost": 1900000.0
+      },
+      "global cutoff t=0.51": {
+        "n": 2000,
+        "n_fight": 860,
+        "n_concede": 1140,
+        "n_escalate": 0,
+        "amount_at_risk": 3609733.6999999997,
+        "gross_recovered": 1201628.8800000001,
+        "net_pnl": 384628.88,
+        "recovery_rate": 0.3328857416822743,
+        "fight_win_rate": 0.6616279069767442,
+        "ops_cost": 817000.0
+      },
+      "expected value (amount-aware)": {
+        "n": 2000,
+        "n_fight": 470,
+        "n_concede": 1498,
+        "n_escalate": 32,
+        "amount_at_risk": 3609733.6999999997,
+        "gross_recovered": 1059928.06,
+        "net_pnl": 562928.06,
+        "recovery_rate": 0.29363054122247306,
+        "fight_win_rate": 0.6531914893617021,
+        "ops_cost": 521700.0
+      },
+      "EV + novelty escalation": {
+        "n": 2000,
+        "n_fight": 469,
+        "n_concede": 1494,
+        "n_escalate": 37,
+        "amount_at_risk": 3609733.6999999997,
+        "gross_recovered": 1070273.56,
+        "net_pnl": 561523.56,
+        "recovery_rate": 0.2964965421133421,
+        "fight_win_rate": 0.652452025586354,
+        "ops_cost": 532500.0
+      },
+      "EV + novelty shrinkage": {
+        "n": 2000,
+        "n_fight": 469,
+        "n_concede": 1500,
+        "n_escalate": 31,
+        "amount_at_risk": 3609733.6999999997,
+        "gross_recovered": 1059928.06,
+        "net_pnl": 565278.06,
+        "recovery_rate": 0.29363054122247306,
+        "fight_win_rate": 0.6545842217484008,
+        "ops_cost": 518400.0
+      }
+    },
+    "shifted": {
+      "concede everything": {
+        "n": 900,
+        "n_fight": 0,
+        "n_concede": 900,
+        "n_escalate": 0,
+        "amount_at_risk": 1215397.1500000001,
+        "gross_recovered": 0.0,
+        "net_pnl": 0.0,
+        "recovery_rate": 0.0,
+        "fight_win_rate": 0.0,
+        "ops_cost": 0.0
+      },
+      "fight everything": {
+        "n": 900,
+        "n_fight": 900,
+        "n_concede": 0,
+        "n_escalate": 0,
+        "amount_at_risk": 1215397.1500000001,
+        "gross_recovered": 460643.43000000005,
+        "net_pnl": -394356.56999999995,
+        "recovery_rate": 0.379006508284144,
+        "fight_win_rate": 0.33555555555555555,
+        "ops_cost": 855000.0
+      },
+      "global cutoff t=0.51": {
+        "n": 900,
+        "n_fight": 428,
+        "n_concede": 472,
+        "n_escalate": 0,
+        "amount_at_risk": 1215397.1500000001,
+        "gross_recovered": 340036.67999999993,
+        "net_pnl": -66563.32,
+        "recovery_rate": 0.2797741297978195,
+        "fight_win_rate": 0.48598130841121495,
+        "ops_cost": 406600.0
+      },
+      "expected value (amount-aware)": {
+        "n": 900,
+        "n_fight": 145,
+        "n_concede": 747,
+        "n_escalate": 8,
+        "amount_at_risk": 1215397.1500000001,
+        "gross_recovered": 255004.01,
+        "net_pnl": 104154.01,
+        "recovery_rate": 0.2098112621047367,
+        "fight_win_rate": 0.5448275862068965,
+        "ops_cost": 156550.0
+      },
+      "EV + novelty escalation": {
+        "n": 900,
+        "n_fight": 144,
+        "n_concede": 745,
+        "n_escalate": 11,
+        "amount_at_risk": 1215397.1500000001,
+        "gross_recovered": 260647.91,
+        "net_pnl": 105597.90999999999,
+        "recovery_rate": 0.2144549294031173,
+        "fight_win_rate": 0.5486111111111112,
+        "ops_cost": 162650.0
+      },
+      "EV + novelty shrinkage": {
+        "n": 900,
+        "n_fight": 139,
+        "n_concede": 752,
+        "n_escalate": 9,
+        "amount_at_risk": 1215397.1500000001,
+        "gross_recovered": 259097.69000000003,
+        "net_pnl": 112547.68999999999,
+        "recovery_rate": 0.21317944508920397,
+        "fight_win_rate": 0.5611510791366906,
+        "ops_cost": 153200.0
+      }
+    }
+  }
+}

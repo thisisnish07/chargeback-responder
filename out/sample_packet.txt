@@ -1,0 +1,26 @@
+REPRESENTMENT - Mastercard 4837: No Cardholder Authorization
+Dispute ID: dp_43_000005
+Disputed amount: INR 1,747.98
+Response deadline: 30 Sep 2026 (25 days remaining)
+Model win probability: 0.69   Decision: FIGHT
+
+SUMMARY OF MERCHANT POSITION
+The cardholder asserts this card-absent transaction was not authorised. The authentication and device evidence below is inconsistent with that assertion.
+
+EVIDENCE RELIED UPON
+  [EV-01] Address Verification Service response code - AVS response: full match on address and postal code
+  [EV-02] Card security code match result - CVV2/CVC2 response: match
+  [EV-03] 3-D Secure authentication result / liability shift - 3-D Secure result: authenticated (liability shift applies)
+  [EV-04] Prior undisputed orders on the same card - 3 prior undisputed orders on this card
+
+ARGUMENT
+  Address and card security code supplied at checkout both matched the issuer record, which is inconsistent with an unauthorised third party. [EV-01, EV-02]
+  The transaction was authenticated under 3-D Secure, shifting fraud liability to the issuer. [EV-03]
+  This card has a history of completed orders with no prior dispute. [EV-04]
+
+DISCLOSED EVIDENCE GAPS
+  (minor) Device ID matched to prior legitimate orders - not available
+  (minor) Order IP address and geolocation vs billing address - not available
+  (minor) Recipient signature or OTP-confirmed handover - not available
+
+Merchant requests that the disputed amount be represented.
