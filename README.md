@@ -7,7 +7,6 @@
 
 An end-to-end chargeback defense pipeline that evaluates dispute winnability, executes expected-value decision policies (fight, concede, or escalate), and automatically compiles citation-enforced representment packets under Visa and Mastercard network rules.
 
-Includes a local, zero-dependency management dashboard styled after **Stripe Radar** and **Brex**.
 
 ---
 
